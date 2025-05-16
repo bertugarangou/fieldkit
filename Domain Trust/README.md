@@ -10,13 +10,13 @@ _______________________________
 	Si se soluciona, ho deixem com a sol·lució temporal.
 	
 2. Quan passi, anar a una aula i amb admin local:
-	 nltest /sc_verify:<domini>
-	 whoami /all
-	 klist
-	 (buscar errors)
-	 
-	 Get-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Control\Lsa' | Select RunAsPPL (dona 0?)
-	 
-	 tasklist /fi "imagename eq lsass.exe" (agafar PID)
-	 sigcheck -m <PID> (quins codis o executables apareixen? -> Son els causants!)
+	 nltest /sc_verify:<domini>  
+	 whoami /all  
+	 klist  
+	 (buscar errors)  
+	   
+	 Get-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Control\Lsa' | Select RunAsPPL (dona 0?)  
+	   
+	 tasklist /fi "imagename eq lsass.exe" (agafar PID)  
+	 sigcheck -m <PID> (quins codis o executables apareixen? -> Son els causants!)  
 	 
